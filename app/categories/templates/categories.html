@@ -1,0 +1,8 @@
+<h2>CATEGORIES</h2>
+<ul class="items">
+    <li *ngFor="let category of categories"
+    [class.selected]="isSelected(category)"
+    (click)="onSelect(category)">
+    <span class="badge">{{category.id}}</span> {{category.name}}
+    </li>
+</ul>
